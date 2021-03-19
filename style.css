@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6em;
+}
+
+main {
+  background-color: white;
+}
+h1 {
+  text-align: center;
+}
+.display {
+  width: 24.5em;
+  height: 5em;
+  background: whitesmoke;
+  margin: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+#contentdisplay {
+  text-align: end;
+  margin: 0.5em 0.4em 0 0.2em;
+  font-size: x-large;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.action {
+  margin: 1em;
+  width: 24.5em;
+}
+
+.btn {
+  width: 7em;
+  height: 4em;
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 1em;
+}
+
+.btn:hover,
+.btn:active {
+  border: 1px solid lightskyblue;
+}
+
+.operators button {
+  background: lightyellow;
+}
+
+.digeq {
+  margin-top: 0.5em;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.equal {
+  padding: 9.3em 0;
+  background-color: lightseagreen;
+}
+
+/* media queries */
+
+@media all and (max-width: 450px) {
+  .display {
+    width: 20em;
+    height: 3em;
+  }
+  .action {
+    width: 20em;
+  }
+
+  .btn {
+    width: 5.5em;
+    height: 2.5em;
+    padding: 0.5em;
+  }
+
+  .equal {
+    padding: 6.5em 0;
+  }
+}
